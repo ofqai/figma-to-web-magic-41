@@ -169,8 +169,48 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Features Showcase Section */}
+        <section className="py-20 bg-gradient-to-b from-background via-card/20 to-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16 space-y-4 animate-fade-in">
+              <h2 className="text-4xl md:text-5xl font-bold">
+                <span className="bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+                  Everything you need in
+                </span>
+                <br />
+                <span className="bg-gradient-to-br from-primary to-purple-500 bg-clip-text text-transparent">
+                  one platform
+                </span>
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Powerful tools designed for modern development teams
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center space-y-4 p-6 rounded-2xl hover:bg-card/50 transition-all duration-300 hover:scale-110 group animate-fade-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-purple-500/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-primary/30">
+                    <feature.icon className="w-10 h-10 text-primary group-hover:animate-pulse" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                    <p className="text-sm text-muted-foreground">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Stats Bar Section */}
-        <section className="py-12 bg-card/30 backdrop-blur border-y border-border/50">
+        <section className="py-16 bg-card/30 backdrop-blur border-y border-border/50">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
@@ -179,14 +219,83 @@ const Index = () => {
                 { value: "50+", label: "Countries", icon: Globe },
                 { value: "24/7", label: "Support", icon: Clock }
               ].map((stat, i) => (
-                <div key={i} className="text-center space-y-2 animate-fade-in hover:scale-105 transition-transform duration-300" style={{ animationDelay: `${i * 0.1}s` }}>
-                  <stat.icon className="w-8 h-8 mx-auto text-primary mb-3" />
-                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+                <div key={i} className="text-center space-y-3 animate-fade-in hover:scale-105 transition-transform duration-300" style={{ animationDelay: `${i * 0.1}s` }}>
+                  <stat.icon className="w-10 h-10 mx-auto text-primary mb-3" />
+                  <div className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
                     {stat.value}
                   </div>
                   <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Data Visualization Section */}
+        <section className="py-20 bg-gradient-to-b from-background to-card/30">
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6 animate-fade-in">
+                <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                  Real-time insights
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+                  <span className="bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+                    Monitor everything
+                  </span>
+                  <br />
+                  <span className="bg-gradient-to-br from-primary to-purple-500 bg-clip-text text-transparent">
+                    in real-time
+                  </span>
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Get instant insights into your application's performance with our comprehensive analytics dashboard. Track metrics, identify trends, and make data-driven decisions.
+                </p>
+                <div className="space-y-4 pt-4">
+                  {[
+                    { title: "Live Data Streaming", desc: "Real-time data updates every second" },
+                    { title: "Custom Dashboards", desc: "Build dashboards tailored to your needs" },
+                    { title: "Advanced Filtering", desc: "Filter and segment your data effortlessly" }
+                  ].map((item, i) => (
+                    <div key={i} className="flex gap-4 items-start hover:translate-x-2 transition-transform duration-300">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                      <div>
+                        <h4 className="font-semibold mb-1">{item.title}</h4>
+                        <p className="text-sm text-muted-foreground">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <Button size="lg" className="group mt-6">
+                  Learn more
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
+
+              <Card className="p-8 bg-card/80 backdrop-blur-xl border-primary/20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                <div className="space-y-6">
+                  {/* Performance Metrics */}
+                  {[
+                    { label: "Response Time", value: "45ms", progress: 90, color: "from-green-500 to-green-600" },
+                    { label: "CPU Usage", value: "32%", progress: 32, color: "from-blue-500 to-blue-600" },
+                    { label: "Memory", value: "68%", progress: 68, color: "from-yellow-500 to-yellow-600" },
+                    { label: "Network", value: "85%", progress: 85, color: "from-purple-500 to-purple-600" }
+                  ].map((metric, i) => (
+                    <div key={i} className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm font-medium">{metric.label}</span>
+                        <span className="text-sm font-bold">{metric.value}</span>
+                      </div>
+                      <div className="h-3 bg-background rounded-full overflow-hidden">
+                        <div 
+                          className={`h-full bg-gradient-to-r ${metric.color} rounded-full transition-all duration-1000 animate-fade-in`}
+                          style={{ width: `${metric.progress}%`, animationDelay: `${i * 0.1}s` }}
+                        ></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </Card>
             </div>
           </div>
         </section>
