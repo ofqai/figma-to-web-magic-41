@@ -95,7 +95,11 @@ const Index = () => {
                 </div>
               </div>
               
-              <Button size="lg" className="text-lg px-12 py-7 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white border-0 shadow-2xl shadow-blue-500/50 hover:scale-105 transition-all duration-300">
+              <Button 
+                size="lg" 
+                className="text-lg px-12 py-7 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white border-0 shadow-2xl shadow-blue-500/50 hover:scale-105 transition-all duration-300"
+                onClick={() => window.open('https://onlook-client-rust.vercel.app/', '_blank')}
+              >
                 ابدأ الآن مجانا
               </Button>
             </div>
@@ -392,7 +396,11 @@ const Index = () => {
                 انضم لآلاف المستخدمين الذين بدؤوا تجربة OFQAI وأنشاوا مواقع ومتاجر برمجية
               </p>
               
-              <Button size="lg" className="text-lg px-12 py-7 bg-white text-purple-900 hover:bg-gray-100 border-0 shadow-2xl hover:scale-105 transition-all duration-300">
+              <Button 
+                size="lg" 
+                className="text-lg px-12 py-7 bg-white text-purple-900 hover:bg-gray-100 border-0 shadow-2xl hover:scale-105 transition-all duration-300"
+                onClick={() => window.open('https://onlook-client-rust.vercel.app/', '_blank')}
+              >
                 ابدأ الآن مجانا
               </Button>
 
