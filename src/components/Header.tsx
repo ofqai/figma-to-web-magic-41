@@ -32,13 +32,13 @@ const Header = () => {
               الرئيسية
             </Link>
             <Link to="/subscriptions" className="text-foreground hover:text-primary transition-colors">
-              الاشتراكات
+              الاشنراكات
             </Link>
             <Link to="/how-it-works" className="text-foreground hover:text-primary transition-colors">
-              كيف يعمل
+              من نحن
             </Link>
             <Link to="/templates" className="text-foreground hover:text-primary transition-colors">
-              القوالب
+              قوالب
             </Link>
           </div>
 

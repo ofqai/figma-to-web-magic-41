@@ -14,7 +14,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              منصة لبناء الذكاء الاصطناعي والإبداع الإلكتروني المتخصص وتحسين الأعمال، استخدام تقنيات متطورة لتحقيق أهدافك بسهولة وفاعلية.
+              منصة الذكاء الاصطناعي الرائدة لإنشاء المحتوى وتحسين الأعمال. نساعدك على تحقيق أهدافك بسهولة وفعالية.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary transition-colors">
@@ -38,7 +38,7 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-primary transition-colors">الرئيسية</Link></li>
               <li><Link to="/how-it-works" className="hover:text-primary transition-colors">كيف يعمل</Link></li>
               <li><Link to="/subscriptions" className="hover:text-primary transition-colors">الأسعار</Link></li>
-              <li><a href="#" className="hover:text-primary transition-colors">من نحن</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">عن المنصة</a></li>
             </ul>
           </div>
 

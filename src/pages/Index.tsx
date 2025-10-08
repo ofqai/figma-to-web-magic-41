@@ -59,14 +59,14 @@ const Index = () => {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-300 text-sm font-medium backdrop-blur-sm border border-blue-500/20">
                 <Sparkles className="w-4 h-4" />
-                <span>منصة قوية لتتبع الأداء باحترافية</span>
+                <span>منصة الذكاء الاصطناعي الأولى عربيًا</span>
               </div>
               
               {/* Main Heading */}
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
                 اصنع موقعك أو متجرك الإلكتروني في
                 <br />
-                دقائق للذكاء الاصطناعي باستخدام
+                دقائق بالذكاء الاصطناعي باستخدام
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
                   OFQAI
@@ -74,24 +74,22 @@ const Index = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-                من منصة متكاملة تعتمد على الذكاء الاصطناعي لإنشاء المواقع والمتاجر من
-                <br />
-                إنتاج مواقع ومتاجر إلكترونية بمميزات قابلة لإدارة ملتبي
+                هي منصة متكاملة تعتمد على الذكاء الاصطناعي، تمكّن المستخدمين من إنشاء مواقع ومتاجر إلكترونية بسهولة فائقة مع إمكانية تعديل أي عنصر في الموقع بشكل ديناميكي.
               </p>
               
               {/* Feature Badges */}
               <div className="flex flex-wrap gap-4 justify-center items-center pt-4">
                 <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                   <Zap className="w-4 h-4 text-blue-400" />
-                  <span className="text-sm text-gray-300">تصميم سريع ومباشر</span>
+                  <span className="text-sm text-gray-300">أنشئ موقعًا من وصف نصي</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                   <Shield className="w-4 h-4 text-purple-400" />
-                  <span className="text-sm text-gray-300">استضافة مجانية دائمة</span>
+                  <span className="text-sm text-gray-300">استورد تصميمك من Figma</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                   <Code className="w-4 h-4 text-pink-400" />
-                  <span className="text-sm text-gray-300">البرمجة بدون كتابة أكواد</span>
+                  <span className="text-sm text-gray-300">أضف أو عدل العناصر بسهولة</span>
                 </div>
               </div>
               
@@ -207,7 +205,7 @@ const Index = () => {
                 مميزات المنصة
               </h2>
               <p className="text-gray-400 text-lg">
-                تمتع بنا من أدوات احترافية لبناء مشاريعك بسهولة التوسع اليها
+                الجمع بين قوة الذكاء الاصطناعي وسهولة التحرير اليدوي
               </p>
             </div>
 
@@ -216,32 +214,32 @@ const Index = () => {
                 {
                   icon: Brain,
                   title: "ذكاء اصطناعي متقدم",
-                  description: "تعلم ننا من اسعتت مواقع مذكرة عمرانية من خلال كلمات مستخدم من اي مكان"
-                },
-                {
-                  icon: Code,
-                  title: "كود نظيف ومنظم",
-                  description: "مولد نصوص بالعربية فابل لي XML.CSS, JS في شكل منتظم وسريعة"
+                  description: "خوارزميات ذكية تفهم احتياجاتك وتنشئ مواقع احترافية في ثوانٍ"
                 },
                 {
                   icon: Zap,
-                  title: "حرر الرجب والأوفلاين",
-                  description: "وتبلتح وإنها برسرعة اعلى مؤتى يصدر الدعم سرعة"
+                  title: "حرر بالسحب والأفلات",
+                  description: "واجهة تحرير بصرية لتعديل كل عنصر بسهولة"
+                },
+                {
+                  icon: Code,
+                  title: "كود نظيف وسريع",
+                  description: "مواقع محسنة للسرعة والأداء مع كود HTML, CSS, JS نظيف"
                 },
                 {
                   icon: PieChart,
                   title: "تصميم متجاوب",
-                  description: "كانت مع مع كل الأخطاء دون عناء وتجاربا متنوعة بدون عتابة"
+                  description: "مواقع تعمل بشكل مثالي على جميع الأجهزة والشاشات"
                 },
                 {
                   icon: Shield,
-                  title: "مصادر متنوعة",
-                  description: "نتاج مدروس مع النوجيه الجيم وملبياة بيئاته الإنتاج"
+                  title: "متاجر ألكترونية",
+                  description: "إنشاء متاجر كاملة مع أنظمة الدفع وإدارة المنتجات"
                 },
                 {
                   icon: Globe,
-                  title: "دعم لغات متعددة",
-                  description: "تخدخ من تلقاء خاويم بكل بسإقة دبرجة ابين الداعاً"
+                  title: "دعم لغات مختلفة",
+                  description: "مواقع تدعم العربية والإنجليزية مع تحسين RTL"
                 }
               ].map((feature, i) => (
                 <Card 
@@ -270,10 +268,10 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {[
-                { value: "25K+", label: "تحفة رادط", icon: Users },
-                { value: "10K+", label: "مشروع", icon: Globe },
-                { value: "500+", label: "عميل", icon: Activity },
-                { value: "99%", label: "نسبة الرضا", icon: Star }
+                { value: "25K+", label: "موقع تم إنشاؤه", icon: Globe },
+                { value: "10K+", label: "مستخدم نشط", icon: Users },
+                { value: "500+", label: "قالب جاهز", icon: Activity },
+                { value: "99%", label: "معدل الرضا", icon: Star }
               ].map((stat, i) => (
                 <div key={i} className="text-center space-y-3 group hover:scale-105 transition-transform duration-300">
                   <stat.icon className="w-12 h-12 mx-auto text-blue-400 mb-3" />
@@ -297,10 +295,10 @@ const Index = () => {
                 <span>الذكاء الاصطناعي</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white">
-                قوة الذكاء الاصطناعي ✨
+                قوة الذكاء الاصطناعي
               </h2>
               <p className="text-gray-400 text-lg">
-                أدوات مدعومة بالذكاء الاصطناعي لإضافة محتوى ذكائي يتفهم المستقبل
+                تقنيات متقدمة لإنشاء وتحرير المواقع بذكاء استثنائي
               </p>
             </div>
 
@@ -308,18 +306,18 @@ const Index = () => {
               {[
                 {
                   icon: MessageSquare,
-                  title: "روبوتات الدردشة",
-                  description: "أنشئ محادثات AI للإجابة على أسئلة عملائك وتخصيص تجربتهم"
+                  title: "AI Studio التفاعلي",
+                  description: "استوديو تحرير متقدم مع لوحة الطبقات والخصائص"
                 },
                 {
                   icon: Brain,
-                  title: "أسعار ذكية",
-                  description: "استفد من توصيات الأسعار وشيفرات ذكية قابلة للإستخدام"
+                  title: "أتمتة ذكية",
+                  description: "أتمت مهامك مع AI Agent من خلال أوامر نصية بسيطة"
                 },
                 {
                   icon: Sparkles,
-                  title: "تحليلات تلقائية",
-                  description: "اجعل الذكاء الاصطناعي يعمل من أجلك باستمرار لوحات نقوش احترافية"
+                  title: "تحسين تلقائي",
+                  description: "تحسين الألوان والخطوط تلقائياً لضمان التناسق"
                 }
               ].map((feature, i) => (
                 <Card 
@@ -347,15 +345,15 @@ const Index = () => {
                 ماذا يقول عملاؤنا
               </h2>
               <p className="text-gray-400 text-lg">
-                آراء عملائنا تتحدث عما نقدمه من قيمة لمشاريعهم
+                آراء حقيقية من أشخاص حققوا نجاحاً مع OFQAI
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                { name: "أحمد السعيد", role: "مؤسس شركة", quote: "في الواقع، كان تجربة خيطية لتصميم بالأكواد. تصاميم احترافية بدون معرفة بالإكواد!" },
-                { name: "فاطمة الخولي", role: "مديرة التسويق", quote: "منصة مثالية قم بالاختيار الأذكى لتحليل الربيع. اشتريت وأحببتها بعد يوم واحد!" },
-                { name: "محمد الامير", role: "مطور", quote: "سريع، سهل، وذكي. تحصل على موقع حقيقي خلال دقائق بدون خبرة تقنية!" }
+                { name: "أحمد محمد", role: "مؤسس متجر إلكتروني", quote: "OFQAI وفر علي شهور من العمل. أنشأت متجري في دقائق وبدأت البيع فوراً!" },
+                { name: "فاطمة السعد", role: "مصممة جرافيك", quote: "كنت أحتاج موقع شخصي لعرض أعمالي. OFQAI أنشأ لي موقعاً رائعاً يعكس شخصيتي." },
+                { name: "محمد الأحمد", role: "صاحب مطعم", quote: "موقع مطعمي الآن يستقبل طلبات أونلاين! التصميم جميل وسهل الاستخدام." }
               ].map((testimonial, i) => (
                 <Card 
                   key={i} 
@@ -393,7 +391,7 @@ const Index = () => {
               </h2>
               
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
-                انضم لآلاف المستخدمين الذين بدؤوا تجربة OFQAI وأنشاوا مواقع ومتاجر برمجية
+                انضم لآلاف المستخدمين الذين اختاروا OFQAI لإنشاء مواقعهم الاحترافية
               </p>
               
               <Button 
@@ -405,7 +403,7 @@ const Index = () => {
               </Button>
 
               <div className="text-sm text-gray-400 pt-4">
-                لا حاجة لبطاقة ائتمان • ابدأ الآن مجانا
+                لا حاجة لبطاقة ائتمان • ابدأ مجانًا الآن
               </div>
             </div>
           </div>
