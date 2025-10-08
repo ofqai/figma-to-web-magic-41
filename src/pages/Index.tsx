@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowRight, BarChart3, TrendingUp, PieChart, Clock, Users, Activity, Zap, Shield, Globe } from "lucide-react";
+import { ArrowRight, BarChart3, TrendingUp, PieChart, Clock, Users, Activity, Zap, Shield, Globe, Code, Sparkles, Brain, MessageSquare, Star } from "lucide-react";
 
 const Index = () => {
   const features = [
@@ -41,125 +41,151 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-b from-[#0a0d2e] via-[#1a1d4a] to-[#0a0d2e]" dir="rtl">
       <Header />
       
       <main className="pt-20">
         {/* Hero Section */}
         <section className="relative overflow-hidden py-20 md:py-32 min-h-[90vh] flex items-center">
-          {/* Animated Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-purple-500/10 to-background">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_50%)]"></div>
+          {/* Animated Background with circles */}
+          <div className="absolute inset-0">
+            <div className="absolute top-20 right-[10%] w-64 h-64 bg-purple-600/20 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-32 left-[15%] w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+            <div className="absolute top-1/2 right-[20%] w-48 h-48 bg-purple-500/30 rounded-full blur-2xl"></div>
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left Content */}
-              <div className="text-center lg:text-right space-y-8 animate-fade-in">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium backdrop-blur-sm border border-primary/20">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Fully Responsive Template</span>
+            <div className="text-center space-y-8 max-w-4xl mx-auto animate-fade-in">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-300 text-sm font-medium backdrop-blur-sm border border-blue-500/20">
+                <Sparkles className="w-4 h-4" />
+                <span>منصة قوية لتتبع الأداء باحترافية</span>
+              </div>
+              
+              {/* Main Heading */}
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
+                اصنع موقعك أو متجرك الإلكتروني في
+                <br />
+                دقائق للذكاء الاصطناعي باستخدام
+                <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                  OFQAI
+                </span>
+              </h1>
+              
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
+                من منصة متكاملة تعتمد على الذكاء الاصطناعي لإنشاء المواقع والمتاجر من
+                <br />
+                إنتاج مواقع ومتاجر إلكترونية بمميزات قابلة لإدارة ملتبي
+              </p>
+              
+              {/* Feature Badges */}
+              <div className="flex flex-wrap gap-4 justify-center items-center pt-4">
+                <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+                  <Zap className="w-4 h-4 text-blue-400" />
+                  <span className="text-sm text-gray-300">تصميم سريع ومباشر</span>
                 </div>
-                
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
-                  <span className="bg-gradient-to-br from-foreground via-foreground/90 to-foreground/70 bg-clip-text text-transparent">
-                    Analytics for
-                  </span>
-                  <br />
-                  <span className="bg-gradient-to-br from-primary via-purple-500 to-primary bg-clip-text text-transparent">
-                    developers
-                  </span>
-                </h1>
-                
-                <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground leading-relaxed">
-                  Easy to install. Unlimited power.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end items-center pt-4">
-                  <Button size="lg" className="group text-lg px-10 py-6 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-primary/50">
-                    Get started
-                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                  <Button size="lg" variant="outline" className="text-lg px-10 py-6 hover:scale-105 transition-all duration-300">
-                    Book Demo
-                  </Button>
+                <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+                  <Shield className="w-4 h-4 text-purple-400" />
+                  <span className="text-sm text-gray-300">استضافة مجانية دائمة</span>
                 </div>
+                <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
+                  <Code className="w-4 h-4 text-pink-400" />
+                  <span className="text-sm text-gray-300">البرمجة بدون كتابة أكواد</span>
+                </div>
+              </div>
+              
+              <Button size="lg" className="text-lg px-12 py-7 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white border-0 shadow-2xl shadow-blue-500/50 hover:scale-105 transition-all duration-300">
+                ابدأ الآن مجانا
+              </Button>
+            </div>
 
-                {/* Trust Badges */}
-                <div className="flex items-center justify-center lg:justify-end gap-6 flex-wrap pt-8">
-                  <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">Trusted By</span>
-                  <div className="flex gap-4">
-                    {["LOGO", "LEGGIPSUM"].map((logo, i) => (
-                      <div key={i} className="px-8 py-3 bg-card/50 backdrop-blur-sm rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:scale-105">
-                        <span className="text-base font-bold">{logo}</span>
+            {/* Dashboard Preview Cards */}
+            <div className="mt-20 grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {/* Card 1 */}
+              <Card className="p-6 bg-gradient-to-br from-purple-900/40 to-purple-800/20 backdrop-blur-xl border-purple-500/30 rounded-2xl">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex gap-2">
+                      <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-500 text-xs">
+                      ANALYTICS
+                    </Button>
+                  </div>
+                  <div className="text-center py-8">
+                    <h3 className="text-3xl font-bold text-white mb-2">Analytics for</h3>
+                    <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                      developers
+                    </h3>
+                    <p className="text-sm text-gray-400 mt-2">Easy to install. Unlimited power.</p>
+                    <div className="flex gap-2 justify-center mt-4">
+                      <Button size="sm" className="bg-blue-600 text-xs">ANALYTICS</Button>
+                      <Button size="sm" variant="outline" className="text-xs border-white/20 text-white">DASHBOARD</Button>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-2 text-center">
+                    {[
+                      { icon: BarChart3, label: "SOOD" },
+                      { icon: Users, label: "8 accounts" },
+                      { icon: Activity, label: "2,490" },
+                      { icon: Globe, label: "45" }
+                    ].map((item, i) => (
+                      <div key={i} className="p-2 bg-black/30 rounded-lg">
+                        <item.icon className="w-4 h-4 mx-auto text-purple-400 mb-1" />
+                        <div className="text-xs text-gray-400">{item.label}</div>
                       </div>
                     ))}
                   </div>
-                </div>
-              </div>
-
-              {/* Right Dashboard Preview */}
-              <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <div className="absolute -inset-8 bg-gradient-to-r from-primary/30 to-purple-500/30 rounded-3xl blur-3xl animate-pulse"></div>
-                
-                <Card className="relative p-6 md:p-8 bg-card/90 backdrop-blur-xl border-primary/30 shadow-2xl hover:shadow-primary/30 transition-all duration-500">
-                  {/* Stats Cards */}
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    {stats.map((stat, i) => (
-                      <Card 
-                        key={i} 
-                        className="p-4 bg-background/60 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 hover:scale-105 group"
-                        style={{ animationDelay: `${i * 0.1}s` }}
-                      >
-                        <div className="flex items-center justify-between mb-2">
-                          <div className="text-xs text-muted-foreground font-medium">{stat.label}</div>
-                          <Activity className="w-3 h-3 text-primary opacity-50 group-hover:opacity-100 transition-opacity" />
-                        </div>
-                        <div className="text-3xl font-bold mb-1 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-                          {stat.value}
-                        </div>
-                        <div className="text-xs text-green-500 font-semibold flex items-center gap-1">
-                          <TrendingUp className="w-3 h-3" />
-                          {stat.change}
-                        </div>
-                      </Card>
+                  <div className="h-32 bg-black/30 rounded-lg flex items-end gap-1 p-4">
+                    {[30, 60, 40, 80, 50, 70, 45, 85, 55].map((h, i) => (
+                      <div key={i} className="flex-1 bg-gradient-to-t from-purple-600 to-blue-500 rounded-t" style={{ height: `${h}%` }}></div>
                     ))}
                   </div>
+                </div>
+              </Card>
 
-                  {/* Chart Placeholder */}
-                  <div className="relative h-56 bg-gradient-to-br from-primary/10 to-purple-500/10 rounded-xl p-6 border border-border/50 overflow-hidden group">
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
-                    <div className="absolute inset-0 flex items-end justify-around p-6 gap-2">
-                      {[40, 70, 45, 80, 55, 90, 60, 75].map((height, i) => (
-                        <div
-                          key={i}
-                          className="flex-1 bg-gradient-to-t from-primary to-primary/50 rounded-t-lg transition-all duration-500 hover:scale-110 hover:from-purple-500 hover:to-purple-500/50 cursor-pointer group-hover:animate-pulse"
-                          style={{ 
-                            height: `${height}%`,
-                            animationDelay: `${i * 0.1}s`
-                          }}
-                        ></div>
-                      ))}
+              {/* Card 2 */}
+              <div className="space-y-6">
+                <Card className="p-6 bg-gradient-to-br from-blue-900/40 to-blue-800/20 backdrop-blur-xl border-blue-500/30 rounded-2xl">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-white font-bold">Analytics for</span>
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-500 text-xs rotate-90">
+                      ANALYTICS
+                    </Button>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between p-3 bg-black/30 rounded-lg">
+                      <span className="text-gray-400 text-sm">Dashboard</span>
+                      <Activity className="w-4 h-4 text-blue-400" />
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-black/30 rounded-lg">
+                      <span className="text-gray-400 text-sm">Analytics</span>
+                      <BarChart3 className="w-4 h-4 text-purple-400" />
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-black/30 rounded-lg">
+                      <span className="text-gray-400 text-sm">Reports</span>
+                      <PieChart className="w-4 h-4 text-pink-400" />
                     </div>
                   </div>
+                </Card>
 
-                  {/* Mini Stats */}
-                  <div className="grid grid-cols-3 gap-3 mt-6">
-                    {[
-                      { label: "Views", value: "25K", icon: Activity },
-                      { label: "Clicks", value: "500", icon: BarChart3 },
-                      { label: "Rate", value: "98%", icon: TrendingUp }
-                    ].map((item, i) => (
-                      <div 
-                        key={i} 
-                        className="text-center p-3 rounded-lg bg-background/40 backdrop-blur hover:bg-background/60 transition-all duration-300 hover:scale-105 group"
-                      >
-                        <item.icon className="w-4 h-4 mx-auto mb-2 text-primary opacity-70 group-hover:opacity-100 transition-opacity" />
-                        <div className="text-lg font-bold">{item.value}</div>
-                        <div className="text-xs text-muted-foreground">{item.label}</div>
+                <Card className="p-6 bg-gradient-to-br from-purple-900/40 to-pink-800/20 backdrop-blur-xl border-purple-500/30 rounded-2xl">
+                  <h3 className="text-2xl font-bold text-white mb-2">Analytics for</h3>
+                  <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
+                    developers
+                  </h3>
+                  <p className="text-sm text-gray-400 mb-4">Easy to install. Unlimited power.</p>
+                  <div className="flex gap-2 mb-4">
+                    <Button size="sm" className="bg-purple-600 text-xs">ANALYTICS</Button>
+                    <Button size="sm" variant="outline" className="text-xs border-white/20 text-white">DASHBOARD</Button>
+                  </div>
+                  <div className="grid grid-cols-4 gap-2">
+                    {[BarChart3, Users, Activity, Globe].map((Icon, i) => (
+                      <div key={i} className="aspect-square bg-black/30 rounded-lg flex items-center justify-center">
+                        <Icon className="w-5 h-5 text-purple-400" />
                       </div>
                     ))}
                   </div>
@@ -169,170 +195,181 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Features Showcase Section */}
-        <section className="py-20 bg-gradient-to-b from-background via-card/20 to-background">
+        {/* Features Section */}
+        <section className="py-20 relative">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16 space-y-4 animate-fade-in">
-              <h2 className="text-4xl md:text-5xl font-bold">
-                <span className="bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-                  Everything you need in
-                </span>
-                <br />
-                <span className="bg-gradient-to-br from-primary to-purple-500 bg-clip-text text-transparent">
-                  one platform
-                </span>
+            <div className="text-center mb-16 space-y-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
+                مميزات المنصة
               </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Powerful tools designed for modern development teams
+              <p className="text-gray-400 text-lg">
+                تمتع بنا من أدوات احترافية لبناء مشاريعك بسهولة التوسع اليها
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center text-center space-y-4 p-6 rounded-2xl hover:bg-card/50 transition-all duration-300 hover:scale-110 group animate-fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {[
+                {
+                  icon: Brain,
+                  title: "ذكاء اصطناعي متقدم",
+                  description: "تعلم ننا من اسعتت مواقع مذكرة عمرانية من خلال كلمات مستخدم من اي مكان"
+                },
+                {
+                  icon: Code,
+                  title: "كود نظيف ومنظم",
+                  description: "مولد نصوص بالعربية فابل لي XML.CSS, JS في شكل منتظم وسريعة"
+                },
+                {
+                  icon: Zap,
+                  title: "حرر الرجب والأوفلاين",
+                  description: "وتبلتح وإنها برسرعة اعلى مؤتى يصدر الدعم سرعة"
+                },
+                {
+                  icon: PieChart,
+                  title: "تصميم متجاوب",
+                  description: "كانت مع مع كل الأخطاء دون عناء وتجاربا متنوعة بدون عتابة"
+                },
+                {
+                  icon: Shield,
+                  title: "مصادر متنوعة",
+                  description: "نتاج مدروس مع النوجيه الجيم وملبياة بيئاته الإنتاج"
+                },
+                {
+                  icon: Globe,
+                  title: "دعم لغات متعددة",
+                  description: "تخدخ من تلقاء خاويم بكل بسإقة دبرجة ابين الداعاً"
+                }
+              ].map((feature, i) => (
+                <Card 
+                  key={i} 
+                  className="p-6 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 group"
                 >
-                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-purple-500/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-primary/30">
-                    <feature.icon className="w-10 h-10 text-primary group-hover:animate-pulse" />
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600/30 to-blue-600/30 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <feature.icon className="w-6 h-6 text-purple-400" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                      <p className="text-sm text-gray-400 leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                    <p className="text-sm text-muted-foreground">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
+                </Card>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Stats Bar Section */}
-        <section className="py-16 bg-card/30 backdrop-blur border-y border-border/50">
+        {/* Stats Section */}
+        <section className="py-20 relative">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {[
-                { value: "10M+", label: "API Calls/Day", icon: Zap },
-                { value: "99.9%", label: "Uptime", icon: Shield },
-                { value: "50+", label: "Countries", icon: Globe },
-                { value: "24/7", label: "Support", icon: Clock }
+                { value: "25K+", label: "تحفة رادط", icon: Users },
+                { value: "10K+", label: "مشروع", icon: Globe },
+                { value: "500+", label: "عميل", icon: Activity },
+                { value: "99%", label: "نسبة الرضا", icon: Star }
               ].map((stat, i) => (
-                <div key={i} className="text-center space-y-3 animate-fade-in hover:scale-105 transition-transform duration-300" style={{ animationDelay: `${i * 0.1}s` }}>
-                  <stat.icon className="w-10 h-10 mx-auto text-primary mb-3" />
-                  <div className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+                <div key={i} className="text-center space-y-3 group hover:scale-105 transition-transform duration-300">
+                  <stat.icon className="w-12 h-12 mx-auto text-blue-400 mb-3" />
+                  <div className="text-4xl md:text-5xl font-bold text-white">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>
+                  <div className="text-sm text-gray-400 font-medium">{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Data Visualization Section */}
-        <section className="py-20 bg-gradient-to-b from-background to-card/30">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6 animate-fade-in">
-                <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                  Real-time insights
-                </div>
-                <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                  <span className="bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-                    Monitor everything
-                  </span>
-                  <br />
-                  <span className="bg-gradient-to-br from-primary to-purple-500 bg-clip-text text-transparent">
-                    in real-time
-                  </span>
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Get instant insights into your application's performance with our comprehensive analytics dashboard. Track metrics, identify trends, and make data-driven decisions.
-                </p>
-                <div className="space-y-4 pt-4">
-                  {[
-                    { title: "Live Data Streaming", desc: "Real-time data updates every second" },
-                    { title: "Custom Dashboards", desc: "Build dashboards tailored to your needs" },
-                    { title: "Advanced Filtering", desc: "Filter and segment your data effortlessly" }
-                  ].map((item, i) => (
-                    <div key={i} className="flex gap-4 items-start hover:translate-x-2 transition-transform duration-300">
-                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold mb-1">{item.title}</h4>
-                        <p className="text-sm text-muted-foreground">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <Button size="lg" className="group mt-6">
-                  Learn more
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
+        {/* AI Features Section */}
+        <section className="py-20 relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-600/10 to-purple-600/10"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="text-center mb-16 space-y-4">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-300 text-sm font-medium backdrop-blur-sm border border-blue-500/20">
+                <Sparkles className="w-4 h-4" />
+                <span>الذكاء الاصطناعي</span>
               </div>
-
-              <Card className="p-8 bg-card/80 backdrop-blur-xl border-primary/20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <div className="space-y-6">
-                  {/* Performance Metrics */}
-                  {[
-                    { label: "Response Time", value: "45ms", progress: 90, color: "from-green-500 to-green-600" },
-                    { label: "CPU Usage", value: "32%", progress: 32, color: "from-blue-500 to-blue-600" },
-                    { label: "Memory", value: "68%", progress: 68, color: "from-yellow-500 to-yellow-600" },
-                    { label: "Network", value: "85%", progress: 85, color: "from-purple-500 to-purple-600" }
-                  ].map((metric, i) => (
-                    <div key={i} className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium">{metric.label}</span>
-                        <span className="text-sm font-bold">{metric.value}</span>
-                      </div>
-                      <div className="h-3 bg-background rounded-full overflow-hidden">
-                        <div 
-                          className={`h-full bg-gradient-to-r ${metric.color} rounded-full transition-all duration-1000 animate-fade-in`}
-                          style={{ width: `${metric.progress}%`, animationDelay: `${i * 0.1}s` }}
-                        ></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials Section */}
-        <section className="py-20 bg-gradient-to-b from-card/30 to-background">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16 animate-fade-in">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Trusted by developers worldwide
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
+                قوة الذكاء الاصطناعي ✨
               </h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Join thousands of teams building better products
+              <p className="text-gray-400 text-lg">
+                أدوات مدعومة بالذكاء الاصطناعي لإضافة محتوى ذكائي يتفهم المستقبل
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                { name: "Sarah Johnson", role: "Lead Developer", company: "TechCorp", quote: "The best analytics platform we've ever used. Real-time insights that actually matter." },
-                { name: "Michael Chen", role: "CTO", company: "StartupXYZ", quote: "Incredible performance and ease of use. Our entire team adopted it in days." },
-                { name: "Emma Davis", role: "Product Manager", company: "InnovateLab", quote: "Game-changing analytics. We can finally make data-driven decisions with confidence." }
+                {
+                  icon: MessageSquare,
+                  title: "روبوتات الدردشة",
+                  description: "أنشئ محادثات AI للإجابة على أسئلة عملائك وتخصيص تجربتهم"
+                },
+                {
+                  icon: Brain,
+                  title: "أسعار ذكية",
+                  description: "استفد من توصيات الأسعار وشيفرات ذكية قابلة للإستخدام"
+                },
+                {
+                  icon: Sparkles,
+                  title: "تحليلات تلقائية",
+                  description: "اجعل الذكاء الاصطناعي يعمل من أجلك باستمرار لوحات نقوش احترافية"
+                }
+              ].map((feature, i) => (
+                <Card 
+                  key={i}
+                  className="p-8 bg-gradient-to-br from-blue-900/20 to-purple-900/20 backdrop-blur-xl border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 text-center group"
+                >
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-blue-600/30 to-purple-600/30 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <feature.icon className="w-8 h-8 text-blue-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-20 relative">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                ماذا يقول عملاؤنا
+              </h2>
+              <p className="text-gray-400 text-lg">
+                آراء عملائنا تتحدث عما نقدمه من قيمة لمشاريعهم
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {[
+                { name: "أحمد السعيد", role: "مؤسس شركة", quote: "في الواقع، كان تجربة خيطية لتصميم بالأكواد. تصاميم احترافية بدون معرفة بالإكواد!" },
+                { name: "فاطمة الخولي", role: "مديرة التسويق", quote: "منصة مثالية قم بالاختيار الأذكى لتحليل الربيع. اشتريت وأحببتها بعد يوم واحد!" },
+                { name: "محمد الامير", role: "مطور", quote: "سريع، سهل، وذكي. تحصل على موقع حقيقي خلال دقائق بدون خبرة تقنية!" }
               ].map((testimonial, i) => (
                 <Card 
                   key={i} 
-                  className="p-6 bg-card/50 backdrop-blur border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 animate-fade-in"
-                  style={{ animationDelay: `${i * 0.1}s` }}
+                  className="p-6 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
                 >
                   <div className="space-y-4">
-                    <div className="flex gap-1">
+                    <div className="flex gap-1 justify-center">
                       {[...Array(5)].map((_, i) => (
-                        <div key={i} className="w-4 h-4 text-yellow-500">★</div>
+                        <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
                       ))}
                     </div>
-                    <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
-                    <div className="pt-4 border-t border-border">
-                      <div className="font-semibold">{testimonial.name}</div>
-                      <div className="text-sm text-muted-foreground">{testimonial.role} at {testimonial.company}</div>
+                    <p className="text-gray-300 text-center leading-relaxed">"{testimonial.quote}"</p>
+                    <div className="pt-4 border-t border-white/10 text-center">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center mx-auto mb-2">
+                        <Users className="w-6 h-6 text-white" />
+                      </div>
+                      <div className="font-semibold text-white">{testimonial.name}</div>
+                      <div className="text-sm text-gray-400">{testimonial.role}</div>
                     </div>
                   </div>
                 </Card>
@@ -342,44 +379,27 @@ const Index = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 md:py-32 bg-gradient-to-br from-primary/20 via-purple-500/10 to-background relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.15),transparent_70%)]"></div>
-          <div className="absolute inset-0 bg-grid-white/5"></div>
+        <section className="py-20 md:py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-600/20 to-blue-600/20"></div>
           
           <div className="container mx-auto px-4 relative z-10">
-            <Card className="p-12 md:p-20 text-center bg-card/90 backdrop-blur-xl border-primary/30 max-w-4xl mx-auto shadow-2xl animate-fade-in">
-              <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                Start your journey
-              </div>
-              
-              <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                <span className="bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-                  Sign up for
-                </span>
-                <br />
-                <span className="bg-gradient-to-br from-primary to-purple-500 bg-clip-text text-transparent">
-                  free today
-                </span>
+            <div className="text-center max-w-3xl mx-auto space-y-8">
+              <h2 className="text-4xl md:text-6xl font-bold text-white">
+                مستعد لإنشاء موقعك الأول؟
               </h2>
               
-              <p className="text-muted-foreground text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-                Start building better products with powerful analytics. No credit card required.
+              <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
+                انضم لآلاف المستخدمين الذين بدؤوا تجربة OFQAI وأنشاوا مواقع ومتاجر برمجية
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="group text-lg px-12 py-7 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-primary/50">
-                  Get started
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-12 py-7 hover:scale-105 transition-all duration-300">
-                  Book Demo
-                </Button>
-              </div>
+              <Button size="lg" className="text-lg px-12 py-7 bg-white text-purple-900 hover:bg-gray-100 border-0 shadow-2xl hover:scale-105 transition-all duration-300">
+                ابدأ الآن مجانا
+              </Button>
 
-              <div className="mt-10 text-sm text-muted-foreground">
-                Join 10,000+ developers already using OFQAI
+              <div className="text-sm text-gray-400 pt-4">
+                لا حاجة لبطاقة ائتمان • ابدأ الآن مجانا
               </div>
-            </Card>
+            </div>
           </div>
         </section>
       </main>
